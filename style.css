@@ -235,6 +235,11 @@ body {
     display: none;
 }
 
+.slide-wrapper{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 .slide-item{
     border: 0.5px solid #c8ebd6;
     background-color: #c8ebd6;
@@ -287,7 +292,7 @@ body {
     margin-top: 50px;
 }
 
-.choose-text h3{
+.choose-text h3, .blog-text h3{
     font-weight: 600;
     font-size: 30px;
     margin-bottom: 0;
@@ -341,4 +346,112 @@ body {
 #choose-item-desc{
     font-weight: 400;
     font-size: 12px;
+}
+
+.blog-section{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-images-wrapper{
+    width: 50%;
+    display: flex;
+    column-gap: 10px;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.blog-image-1-wrapper{
+    width: 60%;
+    position: relative;
+    z-index: 1;
+}
+
+#sofa-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.blog-image-2{
+    position: absolute;
+    width: 60%;
+    height: 300px;
+    bottom: -10px;
+    right: -50%;
+}
+
+#sofa-img-abs{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.blog-image-2-wrapper{
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+}
+
+#living-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.blog-text{
+    width: 50%;
+    margin-right: 50px;
+}
+
+.blog-text button{
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    transition: all 0.5s ease-in;
+}
+
+.blog-text button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: 0;
+}
+
+.footer-section{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    background-color: #516158;
+}
+
+.footer-section img{
+    width: 25px;
+    height: 25px;
+    margin: 0;
+}
+
+.footer-section ul{
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+}
+
+.footer-section ul li:hover{
+    cursor: pointer;
+}
+
+.footer-section p{
+    align-items: center;
+    font-weight: 500;
+    margin-right: 0;
 }
